@@ -2,12 +2,11 @@
 //  AppDelegate.swift
 //  breakpoint
 //
-//  Created by Rifqi Alfaizi on 31/12/18.
-//  Copyright © 2018 Rifqi Alfaizi. All rights reserved.
+//  Created by Rifqi Alfaizi on 13/11/19.
+//  Copyright © 2019 Rifqi Alfaizi. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,16 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
-        
-        if Auth.auth().currentUser == nil {
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")
-            window?.makeKeyAndVisible()
-            window?.rootViewController?.present(authVC, animated: true, completion: nil)
-            
-        }
-        
         return true
     }
 

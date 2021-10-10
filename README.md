@@ -29,6 +29,5 @@ MVC (Model, View, Controller)
 ## Library Used
 Firebase
 
-
 ## Preview
 <img src="./Screen Record/Screen Record.gif" alt="alt text" width="210px" height="408px">
